@@ -13,6 +13,13 @@ namespace TestAngular.Controllers
             return View();
         }
 
+
+        public ActionResult Index2()
+        {
+            return File("ClientApp/src/index.html", "text/html");
+        }
+
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
